@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta namme="description" content="">
+    <title>Typing Game</title>
+    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  </head>
+  <body class="body">
+    <header class="header">
+        <h1>Typing Game</h1>          
+    </header>
+    <div class="container text-center">
+        <div id="welcomePage">
+            <div class="instruction_long">
+                <h5>Instructions</h5>
+                <p>Type each word in the given amount of seconds to score. <br>The score will be calculated based on the game level and word length.</p>
+            </div>
+            <div class="Level">
+                Current Level:
+                    <span id="currentLevel">Easy</span>
+                    <br>            <!-- Instructions -->
+                    <p class="instruction_short">Type the given word within
+                        <!-- span tag is inline, no br unlike div tag -->
+                        <span id="seconds">10</span>Seconds:
+                    </p>
+                <div class="buttons">
+                    <div class="level_buttons">
+                        <!-- Level Adjustment Button  -->
+                        <button type="button" class="button" id="easy" onclick="buttonClickEasy()" autofocus>Easy</button>
+                        <button type="button" class="button" id="medium" onclick="buttonClickMedium()">Medium</button>
+                        <button type="button" class="button" id="hard" onclick="buttonClickHard()">Hard</button>
+                    </div>
+                    <!-- Start Button -->
+                    <button type="button" class="button start_button" onclick="buttonClickStart()">Start</button>
+                </div>
+            </div>
+        </div>
+        <div id="preStartPage">
+            <div id="preStartCountDown"></div>
+        </div>
+        <div id="playingPage">
+            <div>Round Time Left:
+                <span id="rem_time_round"></span>
+            </div>
+            <h2 class="theme" id="current-word"></h2>
+            <input type="text" class="inputbox" placeholder="Start typing..." id="wordInput" onInput="checkInput(this)" autofocus>
+            <h4 class="msg" id="message"></h4>
+            <!-- Time and score -->
+            <div class="time_score">
+                <div>Time Left:
+                    <span id="rem_time_word">0</span>
+                </div>
+                <div>Score:
+                    <span id="score">0</span>
+                </div>
+            </div>           
+        </div>
+        <div id="endingPage">
+            <div class="result">
+                <div class="fs30">Score:
+                    <span id="totalScore"></span>
+                </div>
+                <div class="fs30">
+                    <span id="highScoreMsg"></span>
+                    High Score:
+                    <span id="highScore"></span>                    
+                </div>
+            </div>
+            <div class="ending_buttons">
+                <button type="button" class="button" id="goHome" onclick="buttonClickgoBackHome()" autofocus>Back to Home</button>
+                <button type="button" class="button" id="restart" onclick="buttonClickStart()">Restart</button>
+            </div>
+        </div>
+    </div>
+    <script src="typing.js"></script>
+  </body>
+</html>

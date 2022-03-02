@@ -1,0 +1,145 @@
+/*Font size control*/
+.fs30{
+    font-size: 30px;
+}
+/*body*/
+.body{
+    color: white;
+    /* height: 500px; */
+}
+/*header*/
+.header{
+    background-color: #555;
+    height: 60px;
+    text-align:center;
+    font-size: 36px;
+    padding-top: 40px;
+}
+/*container*/
+.container{
+    background-color: #333;
+    position: relative;
+    padding-top:60px;
+    height: 550px;
+}
+
+/*Welcome Page*/
+#welcomePage{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+/*Level Select at the beginning*/
+.Level{
+    margin-top:60px; 
+}
+/*Level buttons*/
+.level_buttons{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+    width: 45%;
+}
+.button{
+    cursor: pointer;
+    width: 220px;
+    height: 50px;
+}
+/*Each level property*/
+#easy{
+    background-color: lightgreen;
+}
+#medium{
+    background-color: orange;
+}
+#hard{
+    background-color: red;
+}
+.start_button{
+    background-color: lightblue;
+    margin-top: 60px;
+}
+/*Time limit for the each level*/
+#seconds{
+    color: blue;
+    font-size: 22px;
+}
+#currentLevel{
+    color: blue;
+    font-size: 22px;
+}
+
+/* PreStartCountDownPage */
+#preStartPage{
+    position: absolute;
+    font-size: 100px;
+    top: 150px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* PlayingPage */
+#playingPage{
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.text-center{
+    text-align: center;
+}
+/*Instruction at the beginning*/
+.instruction_short{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/*Current showing word*/
+.theme{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+/*Feedback message when you type*/
+.msg{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/*input box*/
+.text{
+    padding-top: 20px;
+    border:3px solid #333;
+    color: #333;
+}
+/*Remaining time and the score*/
+.time_score{
+    margin-top: 20px;
+}
+
+/*Ending Page*/
+#endingPage{
+    width: 50%;
+    margin: 0 auto;
+}
+/*Result*/
+.result{
+    font-size: 30px;
+}
+/*Option for return the home screen*/
+.ending_buttons{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+/*Going to the home screen button*/
+#goHome{
+    background-color: lightgreen;
+}
+/*Restart Game button*/
+#restart {
+    background-color: lightblue;
+}
+/*High Score message*/
+#highScoreMsg{
+    color:red;
+}
